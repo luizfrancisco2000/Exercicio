@@ -1,9 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Interface.AdicionarNotas">
 
-</android.support.constraint.ConstraintLayout>
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:columnCount="7">
+
+        <TextView
+            android:layout_width="105dp"
+            android:text="Nome" />
+
+        <TextView android:text="Nota 1" />
+
+        <TextView android:text="Nota 2" />
+
+        <TextView android:text="Nota 3" />
+
+        <TextView android:text="Nota 4" />
+
+        <TextView android:text="Média" />
+
+        <TextView android:text="Situação" />
+        <TextView android:id="@+id/nome" android:text="miseravel 1" />
+        <EditText android:id="@+id/n1" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/n2" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/n3" android:inputType="numberDecimal"/>
+        <EditText android:id="@+id/n4" android:inputType="numberDecimal"/>
+        <TextView android:id="@+id/media" android:text="0,0" android:textColor="@android:color/holo_red_dark" android:inputType="numberDecimal"/>
+        <TextView android:id="@+id/situacao" android:text="Ensacado" android:textColor="@android:color/holo_red_dark" android:inputType="text"/>
+    </GridLayout>
+
+</RelativeLayout>

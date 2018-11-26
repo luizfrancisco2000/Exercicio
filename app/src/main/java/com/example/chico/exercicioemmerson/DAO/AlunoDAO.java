@@ -13,6 +13,10 @@ public interface AlunoDAO {
     @Query("SELECT * FROM aluno where nome like :nome")
     List<Aluno> findAlunos(String nome);
 
+    @Query("SELECT * FROM aluno where matricula like :matricula and senha =:senha")
+    List<Aluno> loginAluno(long matricula, String senha);
+
+
     @Query("SELECT * FROM aluno WHERE turma= :turma")
     List<Aluno> getAlunoByTurma(String turma);
 

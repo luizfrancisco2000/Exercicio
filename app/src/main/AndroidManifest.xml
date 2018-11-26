@@ -21,7 +21,8 @@
         <activity android:name=".Interface.AdicionarAluno" />
         <activity android:name=".Interface.MostrarNotas" />
         <activity android:name=".Interface.AdicionarNotas" />
-        <activity android:name=".Interface.AdicionarDisciplinas"></activity>
+        <activity android:name=".Interface.AdicionarDisciplinas" />
+        <activity android:name=".Interface.MenuProfessor"></activity>
     </application>
 
 </manifest>
